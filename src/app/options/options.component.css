@@ -1,0 +1,14 @@
+.main-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 660px;
+    width: 1525px;
+}
+
+.options {
+    height: 550px;
+    width: 1200px;
+    background-color: #494925cf;
+    border-radius: 15px;
+}

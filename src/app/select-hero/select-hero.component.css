@@ -1,0 +1,37 @@
+.maind-block-select-hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 660px;
+    width: 1525px;
+}
+
+.selectHero {
+    height: 590px;
+    width: 300px;
+    background-color: #000000ad;
+    border-radius: 15px;
+    border: 2px solid #3c76ff;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.selectHero:hover {
+    transform: scale(1.05);
+}
+
+#first-box {
+    background-image: url('../../assets/lion.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+#first-box:hover{
+    background-image: url('../../assets/lion-2.png');
+    background-size: cover;
+    background-position: -85px;
+    background-repeat: no-repeat;
+}
+

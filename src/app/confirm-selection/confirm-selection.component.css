@@ -1,0 +1,38 @@
+.main-confirm-selection-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 671px;
+    width: 1536px;
+    background-color: #000000a1
+}
+
+.first-confirm-selection-block {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 335.5px;
+    font-size: 44px;
+}
+
+.second-confirm-selection-block {
+    display: flex;
+    height: 182px;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.button-confirm {
+    background-color: #2753ebe6;
+    height: 60px;
+    width: 116px;
+    cursor: pointer;
+    transform: skew(15deg);
+}
+
+.button-confirm:hover {
+    color: white;
+    background-color: #4cc9f0;
+    box-shadow: 10px 10px 100px 6px rgba(76, 201, 240, 1);
+}

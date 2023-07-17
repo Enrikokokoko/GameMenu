@@ -1,0 +1,33 @@
+.parent{
+    display:flex;
+    align-items: center;
+    height: 93vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    height: 400px;
+    width: 300px;
+    /* background-color: blue; */   
+    justify-content: space-between;
+}
+
+.app-main-menu-button-box {
+    background-color: #ebc827e6;
+    height: 60px;
+    width: 300px;
+    cursor: pointer;
+    transform: skew(15deg);
+}
+
+.app-main-menu-button-box:hover {
+    color: white;
+    background-color: #b9e769;
+    box-shadow: 10px 10px 100px 6px rgba(185, 231, 105, 1);
+}
+
+.menu-open {
+    display: none;
+  }

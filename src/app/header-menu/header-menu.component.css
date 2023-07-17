@@ -1,0 +1,34 @@
+img {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 212.9vh;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(32 26 109 / 75%);
+    height: 50px;
+}
+
+.icon {
+    margin: -3px;
+    font-size: 30px;
+    z-index: -2;
+    padding: 10px 20px;
+    transform: perspective(200px) rotateX(-30deg);
+    cursor: pointer;
+    height: 95px;
+    width: 250px;
+    background-image: url('../../assets/icon-tmnt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #003388;
+}
+
+.img-icon {
+    height: 80px;
+    width: 250px;
+}
