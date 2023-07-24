@@ -10,19 +10,22 @@ import { SelectHeroComponent } from './select-hero/select-hero.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { ConfirmSelectionComponent } from './confirm-selection/confirm-selection.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
+import { GoogleQauthComponent } from './google-qauth/google-qauth.component';
 
 const routes: Routes = [ 
   { path: '', redirectTo: '/menu', pathMatch: 'full'},
   { path: 'menu', component: MainMenuButtonBoxComponent, title: 'Mine menu'},
-  { path: 'newGame', component: NewGameComponent, title: 'New game'},
-  { path: 'loadGame', component: LoadGameComponent, title: 'Load game'},
-  { path: 'options', component: OptionsComponent, title: 'Options'},
-  { path: 'details', component: DetailsComponent, title: 'Details'},
-  { path: 'exit', component: ExitComponent, title: 'Exit'},
-  { path: 'confirm', component: ConfirmComponent, title: 'Confirm your selection'},
-  { path: 'selectHero', component: SelectHeroComponent, title: 'Select hero'},
-  { path: 'confirmSelection', component: ConfirmSelectionComponent, title: 'Confirm selection'},
-  { path: 'screen', component: SplashScreenComponent, title: 'Loading'}
+  { path: 'menu/newGame', component: NewGameComponent, title: 'New game'},
+  { path: 'menu/loadGame', component: LoadGameComponent, title: 'Load game'},
+  { path: 'menu/options', component: OptionsComponent, title: 'Options'},
+  { path: 'menu/details', component: DetailsComponent, title: 'Details'},
+  { path: 'menu/exit', component: ExitComponent, title: 'Exit'},
+  { path: 'menu/newGame/confirm', component: ConfirmComponent, title: 'Confirm your selection'},
+  { path: 'menu/newGame/selectHero', component: SelectHeroComponent, title: 'Select hero'},
+  { path: 'menu/newGame/selectHero/confirmSelection', component: ConfirmSelectionComponent, title: 'Confirm selection'},
+  { path: 'menu/newGame/selectHero/screen', component: SplashScreenComponent, title: 'Loading'},
+  { path: 'login', component: GoogleQauthComponent},
+  { path: '', component: GoogleQauthComponent},
 ];
 
 @NgModule({

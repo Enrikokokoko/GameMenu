@@ -1,22 +1,48 @@
+<div class="google-icon">
+    <div id="g_id_onload"
+     data-client_id="871206189901-i8rjf5jqb9kpk8kmlue74tjs02kik6gk.apps.googleusercontent.com"
+     data-context="use"
+     data-ux_mode="popup"
+     data-login_uri="/menu"
+     data-auto_select="true"
+     data-itp_support="true">
+</div>
+
+<div class="g_id_signin"
+     data-type="icon"
+     data-shape="circle"
+     data-theme="filled_blue"
+     data-text="signin"
+     data-size="large">
+</div>
+</div>
 
 <div class="parent">
     <div class="menu">
-        <a routerLink="/newGame">
+        <a routerLink="/menu/newGame">
             <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">
                 New Game
             </button>
         </a>
-        <a routerLink="/loadGame">
-            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">Load Game</button>
+        <a routerLink="/menu/loadGame">
+            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()" disabled>
+                Load Game
+            </button>
         </a>
-        <a routerLink="/options">
-            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">Options</button>
+        <a routerLink="/menu/options">
+            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">
+                Options
+            </button>
         </a>
-        <a routerLink="/details">
-            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">Details</button>
+        <a routerLink="/menu/details">
+            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">
+                Details
+            </button>
         </a>
-        <a routerLink="/exit">
-            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">Exit</button>
+        <a routerLink="/menu/exit">
+            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">
+                Exit
+            </button>
         </a>
     </div>
 </div>

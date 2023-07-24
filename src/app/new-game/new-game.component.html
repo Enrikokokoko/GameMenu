@@ -2,25 +2,18 @@
     <div class="save-game-text">
         Save game
     </div>  
-    <a routerLink="/confirm">
+    <a routerLink="/menu/newGame/confirm">
     <div class="block-savegame">
-            <button class="newgame" (mouseover)="playHover()" (click)="playClick()">
-                <h1>Cell 1</h1>
-                <p>Blank</p>
+            <button class="newgame" (mouseover)="playHover()" (click)="playClick()" (click)="slot.hero != null" *ngFor="let slot of slots">
+                <div *ngIf="slot.hero == null">
+                    <h1>Slot {{slot.slotId}}</h1>
+                    <p>Blank</p>
+                </div>
+                <div *ngIf="slot.hero != null">
+                    <img [src]="hero" alt="">
+                </div>
             </button>
-            <button class="newgame" (mouseover)="playHover()" (click)="playClick()">
-                <h1>Cell 2</h1>
-                <p>Blank</p>
-            </button>
-            <button class="newgame" (mouseover)="playHover()" (click)="playClick()">
-                <h1>Cell 3</h1>
-                <p>Blank</p>
-            </button>
-            <button class="newgame" (mouseover)="playHover()" (click)="playClick()">
-                <h1>Cell 4</h1>
-                <p>Blank</p>
-            </button>
-        
+
     </div>   
 </a>
 </div>

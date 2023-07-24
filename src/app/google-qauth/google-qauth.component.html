@@ -1,10 +1,16 @@
-<asl-google-signin-button *ngIf="!user"></asl-google-signin-button>
+<div id="g_id_onload"
+     data-client_id="871206189901-i8rjf5jqb9kpk8kmlue74tjs02kik6gk.apps.googleusercontent.com"
+     data-context="use"
+     data-ux_mode="popup"
+     data-login_uri="loaclhost:3000/api/login"
+     data-auto_select="true"
+     data-itp_support="true">
+</div>
 
-
-<div *ngIf="user">
-    <img src="{{ user.photoUrl }}" referrerpolicy="no-referrer">
-    <div>
-      <h4>{{ user.name }}</h4>
-      <p>{{ user.email }}</p>
-    </div>
+<div class="g_id_signin"
+     data-type="icon"
+     data-shape="circle"
+     data-theme="filled_blue"
+     data-text="signin"
+     data-size="large">
 </div>

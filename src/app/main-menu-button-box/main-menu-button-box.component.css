@@ -10,7 +10,6 @@
     margin-left: 10%;
     height: 400px;
     width: 300px;
-    /* background-color: blue; */   
     justify-content: space-between;
 }
 
@@ -20,14 +19,22 @@
     width: 300px;
     cursor: pointer;
     transform: skew(15deg);
+    transition: transform 0.1s;
 }
 
 .app-main-menu-button-box:hover {
     color: white;
     background-color: #b9e769;
     box-shadow: 10px 10px 100px 6px rgba(185, 231, 105, 1);
+    transform: scale(1.05) skew(15deg);    
 }
 
 .menu-open {
     display: none;
+  }
+
+  .google-icon{
+    position: absolute;
+    top: 4px;
+    right: 18px;
   }

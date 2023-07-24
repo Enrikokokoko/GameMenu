@@ -12,6 +12,8 @@ export class AppComponent {
   user: any;
   loggedIn: any;
 
+  log: any
+
   constructor(private authService: SocialAuthService) { }
 
   ngOnInit() {
