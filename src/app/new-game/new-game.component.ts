@@ -10,17 +10,21 @@ import { Hero, Slots } from '../hero';
 
 export class NewGameComponent  {
   
-  slots: Slots[] = [
-    { slotId: 1, hero: null },
-    { slotId: 2, hero: null },
-    { slotId: 3, hero: null },
-    { slotId: 4, hero: null },
-  ]; 
+  slots: Slots[] = []; 
 
   creationDate: Date;
 
   constructor(private menuService: MenuService) {
     this.creationDate = new Date();
+  }
+  ngOnInit()
+  {
+    this.slots = this.menuService.getSlots();
+    console.log("this.slots", this.slots);
+    
+  }
+  saveData(slot: Slots) {
+    this.menuService.saveData(slot);
   }
   playHover() {
     this.menuService.playHover()

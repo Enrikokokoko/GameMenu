@@ -9,5 +9,6 @@ export interface Hero {
 
 export interface Slots {
     slotId: number;
-    hero: Hero | null
+    hero: Hero | null;
+    saveData: Date | null;
 }

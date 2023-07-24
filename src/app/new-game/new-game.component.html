@@ -4,12 +4,14 @@
     </div>  
     <a routerLink="/menu/newGame/confirm">
     <div class="block-savegame">
-            <button class="newgame" (mouseover)="playHover()" (click)="playClick()" (click)="slot.hero != null" *ngFor="let slot of slots">
-                <div *ngIf="slot.hero == null">
+            <button class="newgame" (mouseover)="playHover()" (click)="saveData(slot)" *ngFor="let slot of slots">
+                {{slot.saveData}}
+                <div *ngIf="slot.saveData != null">
                     <h1>Slot {{slot.slotId}}</h1>
                     <p>Blank</p>
+                    {{slot.saveData}}
                 </div>
-                <div *ngIf="slot.hero != null">
+                <div *ngIf="slot.saveData == null">
                     <img [src]="hero" alt="">
                 </div>
             </button>
