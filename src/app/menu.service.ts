@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Slots } from './hero';
 import { format } from 'date-fns';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
+
+private volumeSubject = new BehaviorSubject<number>(1);
+volume$: Observable<number> = this.volumeSubject.asObservable();
 
 private keysyks = 'Kluchikse'
 
@@ -61,6 +65,10 @@ public slots : Slots[]= [
   playClose() {
     const closeButton = new Audio('assets/audio/close.mp3')
     closeButton.play()
+  }
+
+  setVolume(volume: number) {
+    this.volumeSubject.next(volume) 
   }
 
   onActivateSlotClick(active: Slots) {

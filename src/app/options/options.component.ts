@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuService } from '../menu.service';
 
 @Component({
   selector: 'app-options',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class OptionsComponent {
 
+  volume: number = 1
+
+  constructor(private menuService: MenuService) {}
+
+  onVolumeChange(): void {
+    this.menuService.setVolume(this.volume)
+  }
 }

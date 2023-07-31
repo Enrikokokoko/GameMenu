@@ -1,3 +1,9 @@
 <div class="main-block">
-    <div class="options"></div>
+    <div class="options">
+        <Label for="volume">Volume:</Label>
+        <br>
+        <div>
+        <input type="range" id="volume" min="0" max="1" step="0.1" [(ngModel)]="volume" (input)="onVolumeChange()">
+        </div>
+    </div>
 </div>
