@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Test file 
-/src/in.js
+src/in.js
