@@ -20,6 +20,11 @@
     cursor: pointer;
     transform: skew(15deg);
     transition: transform 0.1s;
+    /* background-image: url('../../assets/33.png'); */
+    /* background-size: 50px auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
 }
 
 .app-main-menu-button-box:hover {
@@ -28,6 +33,27 @@
     box-shadow: 10px 10px 100px 6px rgba(185, 231, 105, 1);
     transform: scale(1.05) skew(15deg);    
 }
+
+.active-button:hover {
+    color: white;
+    background-color: #b9e769;
+    box-shadow: 10px 10px 100px 6px rgba(185, 231, 105, 1);
+    transform: scale(1.05) skew(15deg); 
+}
+
+.disabled-button {
+    background-color: #ccc;
+    color: #666;
+    cursor: auto;
+}
+
+.disabled-button:hover {
+    background-color: #ccc;
+    color: #666;
+    box-shadow: none;
+    transform: skew(15deg);
+}
+
 
 .menu-open {
     display: none;

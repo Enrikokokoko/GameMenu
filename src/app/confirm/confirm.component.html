@@ -1,15 +1,24 @@
-<div class="main-confirm-selection-block">
-    <div class="first-confirm-selection-block">
+  
+  <div>
+    <div  class="main-confirm-selection-block" *ngIf="!activeSlot?.saveData; else dataTemplate">
+      <div class="first-confirm-selection-block" >
         <div>Confirm your selection save cell</div>
+      </div>
+      <div class="second-confirm-selection-block">
+          <button class="button-confirm" (click)="playClick()" (mouseover)="playHover()">Confirm</button>
+          <button class="button-confirm" (click)="playClose()" (mouseover)="playHover()">Cancel</button>
+      </div>
     </div>
-    <div class="second-confirm-selection-block">
-        <a routerLink="/menu/newGame/selectHero">
-            <button class="button-confirm" (click)="playClick()">Confirm</button>
-        </a>
-       <a routerLink="/menu/newGame">
-        <button class="button-confirm" (click)="playClose()">Cancel</button>
-       </a>       
+  
+  <ng-template #dataTemplate let-slot>
+    <div class="main-confirm-selection-block">
+      <div class="first-confirm-selection-block">
+        <div>Are you sure you want to rewrite the slot</div>
+      </div>
+      <div class="second-confirm-selection-block">
+          <button class="button-rewrite" (click)="playClick()" (mouseover)="playHover()">Confirm</button>
+          <button class="button-rewrite" (click)="playClose()" (mouseover)="playHover()">Cancel</button>
+      </div>
     </div>
-</div>
-
-
+  </ng-template>
+  </div>

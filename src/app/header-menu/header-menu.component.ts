@@ -12,4 +12,6 @@ export class HeaderMenuComponent {
   playClose() {
     this.menuService.playClose();
   }
+
+  
 }

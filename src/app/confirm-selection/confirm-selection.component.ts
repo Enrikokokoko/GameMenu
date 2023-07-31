@@ -7,10 +7,11 @@ import { MenuService } from '../menu.service';
   styleUrls: ['./confirm-selection.component.css']
 })
 export class ConfirmSelectionComponent {
+
   constructor(private menuService: MenuService) {}
 
-  playClick() {
-    this.menuService.playClick()
+  playSound() {
+    this.menuService.playSound()
   }
 
   playClose() {

@@ -17,33 +17,41 @@
 </div>
 </div>
 
+<!-- <router-outlet></router-outlet> -->
+
 <div class="parent">
     <div class="menu">
-        <a routerLink="/menu/newGame">
-            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">
+        <a routerLink="/menu/new-game/select-card">
+            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playSound()">
                 New Game
             </button>
         </a>
         <a routerLink="/menu/loadGame">
-            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()" disabled>
+            <button class="app-main-menu-button-box"
+            [ngClass]="{'active-button': !isDisabledButton, 'disabled-button': isDisabledButton}"
+            [disabled]="isDisabledButton" 
+            (mouseover)="playHover()" 
+            (click)="playSound()">
                 Load Game
-            </button>
+            </button>   
         </a>
         <a routerLink="/menu/options">
-            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">
+            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playSound()">
                 Options
             </button>
         </a>
         <a routerLink="/menu/details">
-            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">
+            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playSound()">
                 Details
             </button>
         </a>
         <a routerLink="/menu/exit">
-            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playClick()">
+            <button class="app-main-menu-button-box" (mouseover)="playHover()" (click)="playSound()">
                 Exit
             </button>
         </a>
     </div>
 </div>
+
+
 

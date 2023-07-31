@@ -16,6 +16,8 @@ import { ConfirmComponent } from './confirm/confirm.component';
 import { ConfirmSelectionComponent } from './confirm-selection/confirm-selection.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { GoogleQauthComponent } from './google-qauth/google-qauth.component';
+import { MenuService } from './menu.service';
+import { SelectCardComponent } from './select-card/select-card.component'
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -33,13 +35,14 @@ import { GoogleQauthComponent } from './google-qauth/google-qauth.component';
     ConfirmSelectionComponent,
     SplashScreenComponent,
     GoogleQauthComponent,
+    SelectCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SocialLoginModule
   ],
-  providers: [ 
+  providers: [ MenuService,
     {
       provide: 'SocialAuthServiceConfig',
       useValue: {

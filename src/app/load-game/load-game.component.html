@@ -2,10 +2,21 @@
     <div class="load-game-text">
         Load game
     </div>  
-    <div class="block-loadgame">
-        <button class="loadgame"></button>
-        <button class="loadgame"></button>
-        <button class="loadgame"></button>
-        <button class="loadgame"></button>
-    </div> 
+    <div class="block-loadgame" (click)="playSound()" (mouseover)="playHover()">
+        <button class="loadgame" *ngFor="let slot of slots">
+                <div *ngIf="slot.saveData == null">
+                <h1>Slot {{slot.slotId}}</h1>
+                <p>Blank</p>
+            </div>
+            <div *ngIf="slot.saveData != null" class="active-block">
+                <div class="first-part">
+                    {{slot.saveData | date: 'dd.MM.yyyy    HH:mm'}}
+                    <img [src]="slot.img" alt="Unknown hero">
+                </div>
+                <div class="second-part">
+                    <p>{{slot.timer}}</p>
+                    <p>{{slot.passage}}</p>
+                </div>           
+            </div>
+        </button>
 </div>

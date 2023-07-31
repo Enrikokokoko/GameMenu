@@ -21,7 +21,7 @@
 }
 
 #first-box {
-    background-image: url('../../assets/lion.png');
+    background-image: url('../../assets/img-slot/leo.png');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -29,9 +29,53 @@
 }
 
 #first-box:hover{
-    background-image: url('../../assets/lion-2.png');
+    background-image: url('../../assets/img-slot/leo-2.png');
     background-size: cover;
     background-position: -85px;
     background-repeat: no-repeat;
 }
 
+#second-box {
+    background-image: url('../../assets/img-slot/Done.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+#second-box:hover{
+    background-image: url('../../assets/img-slot/Done-2.png');
+    background-size: cover;
+    background-position: -135px;
+    background-repeat: no-repeat;
+}
+
+#third-box {
+    background-image: url('../../assets/img-slot/raphael.png');
+    background-size: cover;
+    background-position: -300px;
+    background-repeat: no-repeat;
+
+}
+
+#third-box:hover{
+    background-image: url('../../assets/img-slot/raphael-2.png');
+    background-size: cover;
+    background-position: -300px;
+    background-repeat: no-repeat;
+}
+
+#fourth-box {
+    background-image: url('../../assets/img-slot/Micke.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+#fourth-box:hover{
+    background-image: url('../../assets/img-slot/Micke-2.png');
+    background-size: cover;
+    background-position: -85px;
+    background-repeat: no-repeat;
+}

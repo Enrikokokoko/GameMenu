@@ -1,0 +1,24 @@
+<div class="main-block-newgame">
+    <div class="save-game-text">
+        Save game
+    </div>  
+    <div class="block-savegame" (mouseover)="playHover()">
+            <button class="newgame"   *ngFor="let slot of slots" (click)="onActivateSlotClick(slot)">
+                    <div *ngIf="slot.saveData == null">
+                    <h1>Slot {{slot.slotId}}</h1>
+                    <p>Blank</p>
+                </div>
+                <div *ngIf="slot.saveData != null" class="active-block" >
+                    <div class="first-part">    
+                        {{slot.saveData | date: 'dd.MM.yyyy    HH:mm'}}
+                        <img [src]="slot.img" alt="Unknown hero">
+                    </div>
+                    <div class="second-part">
+                        <p>{{slot.storageTime}}</p>
+                        <p>{{slot.passage}}</p>
+                    </div>           
+                </div>
+            </button>
+    </div>   
+
+</div>  

@@ -31,6 +31,15 @@
     transform: skew(15deg);
 }
 
+.button-rewrite {
+    background-color: #d01c1ce6;
+    height: 60px;
+    width: 116px;
+    cursor: pointer;
+    transform: skew(15deg);
+}
+
+
 .button-confirm:hover {
     color: white;
     background-color: #4cc9f0;
