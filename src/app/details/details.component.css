@@ -11,4 +11,12 @@
     width: 1200px;
     background-color: #838330cf;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+p {
+    margin: 85px
 }
