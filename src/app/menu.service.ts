@@ -11,7 +11,7 @@ export class MenuService {
 private volumeSubject = new BehaviorSubject<number>(1);
 volume$: Observable<number> = this.volumeSubject.asObservable();
 
-private keysyks = 'Kluchikse'
+private key = 'Kluchikse'
 
 private activeSlot: Slots | null = null;
 
@@ -25,7 +25,7 @@ public slots : Slots[]= [
     this.loadData();
   }
   private loadData() {
-    let data = localStorage.getItem(this.keysyks)
+    let data = localStorage.getItem(this.key)
     if(!data) {
       console.log('null');
     }else {
@@ -41,7 +41,7 @@ public slots : Slots[]= [
     let currentSlotIdx = this.slots.findIndex(v => v.slotId === slot.slotId);
     slot.saveData = new Date();
     this.slots[currentSlotIdx] = slot;
-    localStorage.setItem(this.keysyks, JSON.stringify(this.slots))
+    localStorage.setItem(this.key, JSON.stringify(this.slots))
   }
 
   playHover() {
